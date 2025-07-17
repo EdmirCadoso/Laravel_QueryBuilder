@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Phone;
 
 class MainController extends Controller
 {
 
     public function index(){
-
-    }
+}
 
      public function OneToOne(){
 
@@ -61,6 +61,22 @@ class MainController extends Controller
     }
 }
 
+    public function BelongsTo(){
+        // $phone1 = Phone::find(10);
+        // // echo "<pre>";
+        // // var_dump($phone1->toArray());
+        // $client = $phone1->client;
+        // echo "Telefone: ".$phone1->phone_number . "<br>";
+        // echo "Cliente: ".$client->client_name . "<br>";
+
+
+        // $phone2 = Phone::with('client')->find(10);
+        // echo "<br>";
+        // echo "Telefone:: ". $phone2->phone_number . "<br>";
+        // echo "Cliente:: ". $phone2->client->client_name ;
+    }
+
+
 
 
 
@@ -100,4 +116,5 @@ class MainController extends Controller
     //     echo '<tr>';
     //     echo '</table>';
     // }
+
 }
